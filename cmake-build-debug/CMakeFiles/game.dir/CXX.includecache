@@ -6,21 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/Tierra.cpp
-Tierra.h
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/Tierra.h
-
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/Tierra.h
-
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/cmake-build-debug/CMakeFiles/Objeto.cpp
-Objeto.h
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/cmake-build-debug/CMakeFiles/Objeto.h
-
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/cmake-build-debug/CMakeFiles/Objeto.h
-
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/cmake-build-debug/Controlador.cpp
-Controlador.h
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/cmake-build-debug/Controlador.h
-
-/home/utec/Documentos/Pfinal/Proyecto-POO-C-/cmake-build-debug/Controlador.h
+/home/utec/Documentos/Pfinal/Proyecto-POO-C-/game.cpp
+iostream
+-
+SFML/Graphics.hpp
+-
+cmath
+-
+cstdio
+-
+vector
+-
+iostream
+-
+algorithm
+-
 
