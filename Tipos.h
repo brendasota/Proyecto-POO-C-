@@ -5,4 +5,11 @@
 #ifndef GAME_TIPOS_H
 #define GAME_TIPOS_H
 
-#endif //GAME_TIPOS_H
+#include <string>
+using namespace std;
+// Definiendo alias
+using TipoEntero = int;
+using TipoCaracter = char;
+using TipoString = string;
+
+#endif
