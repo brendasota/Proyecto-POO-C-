@@ -1,41 +1,47 @@
-//
-// Created by utec on 21/06/19.
-//
-
-#ifndef GAME_TIERRA_H
-#define GAME_TIERRA_H
+#ifndef TIERRA
+#define TIERRA
 
 #include <iostream>
 #include <vector>
 #include "Tipos.h"
 #include "Objeto.h"
+#include "Hotel.h"
+#include "Museo.h"
+#include "Restaurante.h"
 #include <SFML/Graphics.hpp>
 
 using namespace std;
 
-// Valores constantes
-const TipoEntero ALTURA = 21;
-const TipoEntero ANCHO  = 21;
-const TipoCaracter COLOR ='.';
-
 class Tierra {
 private:
-    sf::RenderWindow* plano;
-    vector<Objeto*> objetos;
+	int altura;
+	int ancho;
+	sf::RenderWindow* plano;
+	vector<Objeto*> objetos;
+	vector<Objeto*> mejoresobjetos;
+	vector<Objeto*> mejoresobjetostipo;
+	vector<Objeto*> objetosdisponibles;
+	vector<Objeto*> objetoslujosos;
+	vector<Objeto*>* vector = nullptr;
+	void actualizarTierra();
+	void capturarEventos();
 public:
-    Tierra();
-    Tierra(TipoEntero altura, TipoEntero ancho);
-    virtual ~Tierra();
-    void adicionarObjeto(Objeto* objeto);
-    Objeto* removerObjeto(string& nombre);
-    void imprimirObjetos();
-    TipoEntero getAltura();
-    TipoEntero getAncho();
-    TipoEntero getCantidadObjectos();
-    void dibujarTierra();
-    void actualizarTierra();
+	Tierra();
+	Tierra(TipoEntero ancho, TipoEntero altura);
+	virtual ~Tierra();
+	void adicionarObjeto(Objeto* objeto);
+	void imprimirObjetos();
+	void dibujarTierra();
+	void hallarMejores();
+	void hallarMejoresTipo();
+	void hallarDisponibles();
+	void hallarLujosos();
+	void actualizarVector(int operacion);
+	bool buscarObjeto(string nombre);
+	TipoEntero getAltura();
+	TipoEntero getAncho();
+	TipoEntero getCantidadObjectos();
 };
-
 
 #endif
 
