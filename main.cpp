@@ -1,11 +1,10 @@
 #include <iostream>
-#include <SFML/Graphics.hpp>
-#include "Tierra.h"
+#include "Menu.h"
 
 int main() {
-    Tierra tierrita(400, 600);
-    tierrita.dibujarTierra();
-    return 0;
+	Menu ctrl(600, 400);
+	ctrl.ejecutar();
+	return 0;
 }
 
 //const map<char, sf::Color> listaColores = {
