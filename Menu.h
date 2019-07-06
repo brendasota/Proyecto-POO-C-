@@ -37,12 +37,4 @@ public:
 
 
 #endif;
-    void dibujarMapa();
-public:
-    Controlador(): opcion{} {}
-    void ejecutar();
-};
-
-
-#endif //GAME_CONTROLADOR_H
 
